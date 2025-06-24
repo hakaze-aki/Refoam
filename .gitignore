@@ -1,10 +1,19 @@
 HELP.md
-.gradle
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
 
+# Build artifacts and directories
+build/
+out/
+bin/
+
+# Gradle related files
+.gradle/
+# Allow the Gradle Wrapper files to be committed
+!/.gradle/
+!/gradle/wrapper/gradle-wrapper.jar
+!/gradlew
+!/gradlew.bat
+
+# IDE specific files
 ### STS ###
 .apt_generated
 .classpath
@@ -13,18 +22,12 @@ build/
 .settings
 .springBeans
 .sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
 
 ### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
 *.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 
 ### NetBeans ###
 /nbproject/private/
@@ -36,8 +39,5 @@ out/
 ### VS Code ###
 .vscode/
 
-#######추가########
+# Configuration files
 application.yml
-##### 추가 #####
-build/reports/problems/problems-report.html
-
